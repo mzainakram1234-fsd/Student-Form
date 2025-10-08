@@ -1,0 +1,81 @@
+span{
+    font-family: cursive;
+    border-radius: 10px;
+}
+#main{
+    margin-left: 15%;
+    margin-right: 20%;
+}
+#sugetions{
+    width: 80%;
+    margin-left: 5%;
+}
+#submit{
+    border-radius: 10px;
+    padding: 8px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+#sname{
+    width: 25%;
+    padding: 10px;
+}
+#std{
+     animation-name: example;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+}
+@keyframes example{
+    0%{color: black;}
+    25%{color: rgb(121, 255, 4);}
+    50%{color: rgb(17, 0, 255);}
+    75%{color: rgb(255, 255, 0);}
+    100%{
+        -webkit-background-clip: text;
+        background-image: url(image.png);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+#submit{
+    /* box-shadow: inset 5px 7px  17px black; */
+    color: white;
+    background-color: transparent;
+    width: 40%;
+    font-family: cursive;
+    font-weight: 500px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+#submit{
+     animation-name: example;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));
+}
+@keyframes example{
+    0%{color: black; background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));}
+    25%{color: rgb(121, 255, 4); background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));}
+    50%{color: rgb(17, 0, 255); background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));}
+    75%{color: rgb(255, 255, 0); background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));}
+    100%{
+        -webkit-background-clip: text;
+        background-image: url(image.png);
+        background-clip: text;
+        color: transparent;
+        background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));
+    }
+    
+}
+input:focus{
+background: linear-gradient(to right, rgb(121, 255, 4),rgb(17, 0, 255),rgb(255, 255, 0));   
+    color: whitesmoke;
+    
+}
+input::placeholder{
+    color: whitesmoke;
+    font-family: cursive;
+    
+}
