@@ -23,7 +23,7 @@ span{
 }
 #std{
      animation-name: example;
-     animation-duration: 10s;
+     animation-duration: 0.8s;
      animation-iteration-count: infinite;
 }
 @keyframes example{
@@ -78,4 +78,28 @@ input::placeholder{
     color: whitesmoke;
     font-family: cursive;
     
+}
+#container
+{
+    display: grid;
+}
+.loader{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 32ch;
+    animation: type 4s steps(32) infinite;
+}
+@keyframes type{
+    from{
+        width: 0;
+    }
+}
+legend{
+      transform: scale(1);
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+legend:hover{
+    transform: scale(1.1);
 }

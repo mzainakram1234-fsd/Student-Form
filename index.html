@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBMITION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+     <div id="container"> <h2 class="loader">This is <span id="std">STUDENT</span> submition <span id="std">FORM</span> </h2></div>
+      <form action="#"> 
+      <fieldset id="set1">
+      <legend>
+        FORM FOR STUDENTS </legend><br>
+        <label for="student name"><span>Student</span> Name :</label>
+        <input type="text" placeholder="Enter Your Name" id="sname"><br><br>
+        <label for="fname">Father <span>Name</span> :</label>
+        <input type="text" placeholder="Enter Your Father Name" id="sname"><br><br>
+        <label for="phone number"><span>Phone</span> No# :</label>
+        <input type="tel" name="1234" id="number" placeholder="03xx-xxxxxxx" ><br><br>
+        <label for="class name in which you take addmission"><span>Classs</span> Name <span>In</span> Which <span>You</span> Take <span>Addmision</span> :</label>
+            <input list="list1" placeholder="Class Name" id="sname">
+            <datalist id="list1">
+                <option value="1st Year">
+                <option value="2nd Year">
+            </datalist><br><br>
+            <label for="gender">Gender :</label>
+            <input list="list2" placeholder=" Enter Gender" id="sname">
+            <datalist id="list2">
+                <option value="Male">
+                <option value="Female">
+            </datalist><br><br>
+            <fieldset id="set2">
+            <legend><label for="section">Choose <span>Your</span> Section :</label></legend>
+            <label for="html"><span>FSC</span>(Pre <span>Medical</span> )</label>
+            <input type="radio" id="html" name="fav_language" value="HTML" onclick="myfun()"><br>
+            <label for="css">FSC(<span>NON</span>-Medical,<span>Pre</span> Engeenir)</label>
+            <input type="radio" id="html" name="fav_language" value="CSS" onclick="myfun()"><br>
+            <label for="javascript"><span>ICS</span>(Computer <span>Science</span> )</label>
+            <input type="radio" id="html" name="fav_language" value="JavaScript" onclick="myfun()"><br>
+            <label for="javascript">FA.IT(<span>Physical</span> Education)</label>
+            <input type="radio" id="html" name="fav_language" value="JavaScript" onclick="myfun()"><br>
+            </fieldset><br>
+            <label for="address">Address :</label>
+            <input type="text" placeholder="Enter Your Address" id="sname"><br><br>
+            <label for="email">Student <span>E-Mail :</span></label>
+            <input type="email" name="email" id="" placeholder="username @e-mail.com" id="sname"><br><br>
+            <label for="text" id=""><span>Enter</span> Your <span>Informations </span>For <span>Us</span> :</label><br><br>
+            <textarea name="text" id="sugetions" placeholder="Enter Another Information About Yourself"></textarea><br><br>
+            <label for="text"><span>You</span> Fill <span>All</span> Requiements ?</label>
+            <input type="checkbox" name="check" id=""><br><br>
+            <input type="submit" value="Submit Your Student Form" id="submit" onclick="myfunction()" title="Click For Submission">
+
+            
+
+       </fieldset>
+       </form>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
